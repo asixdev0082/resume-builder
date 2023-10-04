@@ -6,10 +6,10 @@ on:
       id: install-appmap
       uses: getappmap/install-action@v1
       with:
-        project-types:  # Choose the type of your project here:
+        project-type:  # Choose the type of your project here:
                         # bundler, maven, gradle, pip, pipenv, poetry,
                         # yarn, npm, etc.
-    - name: Archieve AppMaps
+    - name: Archive AppMaps
       uses: getappmap/archive-action@v1
       with:
         revision: ${{ github.event.pull_request.base.sha }}
